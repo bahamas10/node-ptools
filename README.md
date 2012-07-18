@@ -162,7 +162,7 @@ yields
 
 ### ptools.pwait
 
-```
+``` js
 var pwait = require('ptools').pwait;
 
 pwait(245, function(err) {
