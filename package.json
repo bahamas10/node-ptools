@@ -1,0 +1,26 @@
+{
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "name": "ptools",
+  "description": "Use Solaris/Illumos proc(1) tools in Node.js",
+  "version": "0.0.0",
+  "repository": {
+    "url": "https://github.com/bahamas10/node-ptools.git",
+    "type": "git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "for f in tests/*.js; do echo \"$f\"; node \"$f\" || exit 1; echo; done; echo 'Passed'"
+  },
+  "dependencies": {
+    "merge-recursive": "~ 0.0.2",
+    "exec": "~ 0.0.1"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "keywords": [
+    "illumos", "smartos", "proc", "ptime", "pwdx", "pkill", "ptools", "prun", "pstop"
+  ]
+}
