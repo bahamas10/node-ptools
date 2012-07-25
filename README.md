@@ -69,14 +69,12 @@ Examples
 var pwdx = require('ptools').pwdx;
 
 pwdx(process.pid, function(err, dir) {
-  console.log('process.cwd() = "%s"', process.cwd());
-  console.log('pwdx(%d) = "%s"', process.pid, dir);
+  console.log(dir);
 });
 ```
 yields
 ```
-process.cwd() = "/home/dave/dev/node-ptools"
-pwdx(27780) = "/home/dave/dev/node-ptools"
+/home/dave/dev/node-ptools
 ```
 
 ### ptools.ptree
@@ -186,9 +184,9 @@ ptime(function(err, time) {
 yields
 ``` json
 {
-  "real": "0.230678959",
-  "user": "0.129828895",
-  "sys": "0.079168602"
+  "real": 0.230678959,
+  "user": 0.129828895,
+  "sys": 0.079168602
 }
 ```
 
